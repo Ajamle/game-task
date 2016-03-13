@@ -4,20 +4,25 @@ using namespace std;
 
 int main()
 {
-    int a = 52;
+    int a = rand() % 100;
+    int b;
     cout << "Enter one number: " ;
-    cin >> a;
-    while (a > 51);
+    cin >> b;
+
+    while (b != a)
     {
-    cout << "Secret number is bigger!";
+        if (a > b)
+        {cout << "Secret number is bigger!";}
+        if (a < b)
+        {cout << "Secret number is smaller!"; }
+        cout << "Enter one number: " ;
+        cin >> b;
+
+
     }
-    while (a < 53);
+    if (b == a)
     {
-    cout << "Secret number is smaller!";
-    }
-    while (a = a);
-    {
-    cout <<  "You won!";
+        cout <<  "You won!";
     }
     return 0;
 }
