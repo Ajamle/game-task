@@ -15,14 +15,14 @@ int main()
     {
         if (a > b)
         {cout << "Secret number is bigger!";}
-        if (a < b)
+                if (a < b)
         {cout << "Secret number is smaller!"; }
-        if ( b%2 == 0)
+               if ( b%2 == 0)
         { cout << b << " is even.";}
-        else {cout << b << " is odd."; }
+              else {cout << b << " is odd."; }
         cout << "Enter one number: " ;
         cin >> b;
-
+numofguesses++;
     }
     if (b == a)
     {
